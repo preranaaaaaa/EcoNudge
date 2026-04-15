@@ -1,2 +1,2 @@
 # EcoNudge
-This is a ai based waste identification anad management system
+This is an ai based waste identification and upcycling recommendation system
