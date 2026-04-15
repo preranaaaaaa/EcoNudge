@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="project_files.css">
+</head>
+<body>
+
+<div class="dashboard">
+  <div class="sidebar">
+    <h2>EcoNudge</h2>
+    <button onclick="showSection('upload')">Upload Image</button>
+    <button onclick="showSection('challenges')">Challenges</button>
+    <button onclick="showSection('rewards')">Rewards</button>
+  </div>
+
+  <div class="content">
+
+    <!-- Upload -->
+    <div id="upload" class="section active">
+      <h2>Upload Contribution 🌱</h2>
+      <input type="file" accept="image/*"><br><br>
+      <input type="file" accept="image/*" capture="environment">
+    </div>
+
+    <!-- Challenges -->
+    <div id="challenges" class="section">
+      <h2>Eco Challenges 🏆</h2>
+
+      <div class="card">
+        <img src="default.jpg" class="challenge-img">
+        <p>Recycle Plastic</p>
+        <span>+10 Points</span><br>
+        <button onclick="addPoints(10)">Accept</button>
+        <input type="file" accept="image/*" capture="environment">
+      </div>
+
+      <div class="card">
+        <img src="default.jpg" class="challenge-img">
+        <p>Use Cloth Bag</p>
+        <span>+5 Points</span><br>
+        <button onclick="addPoints(5)">Accept</button>
+        <input type="file" accept="image/*" capture="environment">
+      </div>
+    </div>
+
+    <!-- Rewards -->
+    <div id="rewards" class="section">
+      <h2>Your Rewards 🎁</h2>
+      <h1 id="points">0</h1>
+    </div>
+
+  </div>
+</div>
+
+<script src="scriptpj.js"></script>
+</body>
+</html>
+
